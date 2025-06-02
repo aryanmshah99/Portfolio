@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aryan Shah – Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- AOS Library for scroll animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- You can swap to a CSS reset/normalize if desired -->
+</head>
+<body class="dark-mode">
+  <header>
+    <nav>
+      <a href="#bio">About</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <button id="theme-toggle">Light Mode</button>
+    </nav>
+  </header>
+
+  <!-- 4. Short Bio + Photo -->
+  <section id="bio" data-aos="fade-up">
+    <img src="./assets/images/profile.jpeg" alt="Aryan Shah" class="profile-pic" />
+    <div class="bio-text">
+      <h1>Aryan Shah</h1>
+      <p>
+        Hi, I'm Aryan, a Computer Science sophomore at Virginia Tech ('23–'26). I'm passionate about building full‐stack apps and data‐driven tools. Currently a Data Science intern, I've prototyped AI‐powered devices and web apps. Outside of coding, I enjoy volunteering with tech workshops and exploring new frameworks.
+      </p>
+      <div class="bio-links">
+        <a href="mailto:aryanmshah99@gmail.com" class="bio-link">
+          <i class="fas fa-envelope"></i> Email
+        </a>
+        <a href="https://github.com/aryanmshah99" class="bio-link" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://linkedin.com/in/aryanshah99" class="bio-link" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="./assets/docs/Aryan Shah resume.pdf" class="bio-link resume-link" download>
+          <i class="fas fa-file-pdf"></i> Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Educational/Career Timeline -->
+  <section id="timeline" data-aos="fade-up">
+    <h2>Education & Experience</h2>
+    <div class="timeline-container">
+      <div class="timeline-line"></div>
+      
+      <div class="timeline-item left" data-aos="fade-right">
+        <div class="timeline-content">
+          <div class="timeline-date">Aug 2023 - Present</div>
+          <h3>BTech Computer Science</h3>
+          <p>Virginia Tech (Blacksburg, VA)</p>
+          <div class="timeline-description">
+            <strong>Coursework:</strong> Data structures, Problem solving, Statistics, Computer Organization
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item right" data-aos="fade-left">
+        <div class="timeline-content">
+          <div class="timeline-date">May 2024 - July 2024</div>
+          <h3>Software Engineering Intern</h3>
+          <p>Krossmark Innovations (Embee Group, India)</p>
+          <div class="timeline-description">
+            • Working closely with a team of 5 to develop an online machine inventory system, leading to a 15% improvement in record management efficiency.<br>
+            • Implementing functionalities for adding, deleting, and updating bill of material records, reducing the time spent on these tasks by 25% using Python with SQL for Data management and React and JavaScript for frontend.<br>
+            • Taking charge of post-launch updates, troubleshooting and debugging, improving system performance by an additional 10%.
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item left" data-aos="fade-right">
+        <div class="timeline-content">
+          <div class="timeline-date">May 2024 - Sept 2024</div>
+          <h3>R&D Intern</h3>
+          <p>MachWorks @ Virginia Tech</p>
+          <div class="timeline-description">
+            • Collaborating with a multidisciplinary team to design and prototype a supersonic AI powered UAV.<br>
+            • Conducting simulations and analyses using MATLAB to validate design concepts and improve performance.<br>
+            • Developing comprehensive technical documentation, CAD models, and detailed project reports; enhancing project tracking and communication.
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item right" data-aos="fade-left">
+        <div class="timeline-content">
+          <div class="timeline-date">Sept 2024 - Dec 2024</div>
+          <h3>Undergraduate Grading Assistant</h3>
+          <p>VT Department of Engineering</p>
+          <div class="timeline-description">
+            • Providing grading support to over 140 students in ENGE 1215, ensuring fair assessment and constructive feedback.<br>
+            • Collaborating with faculty to maintain a high academic standard and support student success.
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item left" data-aos="fade-right">
+        <div class="timeline-content">
+          <div class="timeline-date">Sept 2024 - Dec 2024</div>
+          <h3>Project Management Intern</h3>
+          <p>Commonwealth Cyber Initiative SWVA</p>
+          <div class="timeline-description">
+            • Contributing to the development of programs, including workforce development, innovation, and research initiatives.<br>
+            • Assisting in event planning for seminars and for an annual meeting involving over 40 researchers presenting their research.<br>
+            • Updated the entire CCI SWVA website Using Ensemble (CMS) including reviewing the website for accuracy, creating content and checking website's accessibility.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Badges and Icons (Skills Section) -->
+  <section id="skills" data-aos="fade-up">
+    <h2>Tech Stack</h2>
+    <div class="tech-stack-container">
+      <button class="scroll-arrow scroll-left" aria-label="Scroll left">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      
+      <div class="tech-stack">
+        <div class="tech-icon-wrapper">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="tech-icon" />
+          <span class="tech-label">Python</span>
+        </div>
+        <div class="tech-icon-wrapper">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="tech-icon" />
+          <span class="tech-label">Java</span>
+        </div>
+        <div class="tech-icon-wrapper">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" class="tech-icon" />
+          <span class="tech-label">C++</span>
+        </div>
+        <div class="tech-icon-wrapper">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon" />
+          <span class="tech-label">JavaScript</span>
+        </div>
+        <div class="tech-icon-wrapper">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-icon" />
+          <span class="tech-label">React</span>
+        </div>
+        <div class="tech-icon-wrapper">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="tech-icon" />
+          <span class="tech-label">Node.js</span>
+        </div>
+        <div class="tech-icon-wrapper">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" class="tech-icon" />
+          <span class="tech-label">Flask</span>
+        </div>
+        <div class="tech-icon-wrapper">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot" class="tech-icon" />
+          <span class="tech-label">Spring Boot</span>
+        </div>
+        <div class="tech-icon-wrapper">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="tech-icon" />
+          <span class="tech-label">HTML5</span>
+        </div>
+        <div class="tech-icon-wrapper">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="tech-icon" />
+          <span class="tech-label">CSS3</span>
+        </div>
+        <div class="tech-icon-wrapper">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="tech-icon" />
+          <span class="tech-label">MySQL</span>
+        </div>
+        <div class="tech-icon-wrapper">
+          <img src="https://www.vectorlogo.zone/logos/twilio/twilio-icon.svg" alt="Twilio" class="tech-icon" />
+          <span class="tech-label">Twilio</span>
+        </div>
+        <div class="tech-icon-wrapper">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="tech-icon" />
+          <span class="tech-label">Git</span>
+        </div>
+        <div class="tech-icon-wrapper">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="tech-icon" />
+          <span class="tech-label">Docker</span>
+        </div>
+        <div class="tech-icon-wrapper">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" class="tech-icon" />
+          <span class="tech-label">VS Code</span>
+        </div>
+        <div class="tech-icon-wrapper">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Eclipse" class="tech-icon" />
+          <span class="tech-label">Eclipse</span>
+        </div>
+      </div>
+
+      <button class="scroll-arrow scroll-right" aria-label="Scroll right">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- 1. Hover Effects & 3. Quick Code Snippets (Projects Section) -->
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <!-- Project 1: Google Keep Clone -->
+      <div class="project-card">
+        <a href="https://5dpdnd.csb.app/" target="_blank" rel="noopener" class="project-link">
+          <div class="project-image">
+            <img src="./assets/images/keep-clone.png" alt="Google Keep Clone Screenshot" />
+            <div class="hover-overlay">
+              <p>A React/TypeScript clone of Google Keep. Implements note CRUD, drag‐and‐drop, and responsive UI. Click to view live demo!</p>
+            </div>
+          </div>
+          <h3>Google Keep Clone <i class="fas fa-external-link-alt"></i></h3>
+        </a>
+        <div class="code-snippet">
+          <pre><code>// Example: adding more notes
+function App() {
+  const [notes, setNotes] = useState([]);
+  function addNote(newNote) {
+    setNotes(prevNotes => {
+  return [...prevNotes, newNote];
+});
+}
+          </code></pre>
+        </div>
+      </div>
+
+      <!-- Project 2: AI Assistant -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="./assets/images/ai-assistant.jpeg" alt="AI Assistant GIF" />
+          <div class="hover-overlay">
+            <p>Raspberry Pi + ChatGPT: Real‐time speech recognition and response with Google Text‐to‐Speech integration.</p>
+          </div>
+        </div>
+        <h3>AI Assistant</h3>
+        <div class="code-snippet">
+          <pre><code># Python snippet: Capture image & send to ChatGPT
+from picamera import PiCamera
+import openai
+
+camera = PiCamera()
+camera.capture('my_image.jpg')
+// used 3.5-turbo model
+openai.api_key = "my_key"
+response = openai.Image.create(
+  prompt="Describe this image", n=1, size="256x256"
+)
+print(response.data[0].url)
+          </code></pre>
+        </div>
+      </div>
+
+      <!-- Project 3: Management Systems (Fewer code lines) -->
+      <div class="project-card">
+        <div class="project-image">
+          <img src="images/management-sys.gif" alt="No image available :" />
+          <div class="hover-overlay">
+            <p>Python+MySQL backend managing student data/fees/library. Simple HTML interface for CRUD operations.</p>
+          </div>
+        </div>
+        <h3>Management Systems</h3>
+        <div class="code-snippet">
+          <pre><code>-- SQL snippet: Create student table
+CREATE TABLE Students (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  email VARCHAR(100),
+  enrolled_date DATE
+);
+          </code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Aryan Shah • <a href="mailto:aryanmshah99@gmail.com">aryanmshah99@gmail.com</a> • <a href="https://github.com/aryanmshah99">GitHub</a> • <a href="https://linkedin.com/in/aryanshah99">LinkedIn</a></p>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Initialize AOS -->
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>

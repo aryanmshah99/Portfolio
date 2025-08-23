@@ -59,7 +59,7 @@
       <div class="timeline-line"></div>
       
       <div class="timeline-item left" data-aos="fade-right">
-        <div class="timeline-content">
+        <div class="timeline-content" onclick="openModal('btech')">
           <div class="timeline-date">Aug 2023 - Present</div>
           <h3>BTech Computer Science</h3>
           <p>Virginia Tech (Blacksburg, VA)</p>
@@ -70,7 +70,46 @@
       </div>
 
       <div class="timeline-item right" data-aos="fade-left">
-        <div class="timeline-content">
+        <div class="timeline-content" onclick="openModal('data-science')">
+          <div class="timeline-date">May 2025 - Aug 2025</div>
+          <h3>Data Science Intern</h3>
+          <p>CIPIO.ai (Fairfax, VA)</p>
+          <div class="timeline-description">
+            • Built AI Reply Service integrating Groove webhooks, Gemini, and Supabase, reducing manual drafting time 98%.<br>
+            • Automated 100% of manual follow-ups by deploying a scheduled email service with SendGrid using CRON.<br>
+            • Shipped Next.js dashboard for drafts/follow-ups; boosted agent throughput 10×, reduced errors 24%.<br>
+            • Enabled 50+ concurrent replies, <100ms DB ops through indexing, async queues and retries.
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item left" data-aos="fade-right">
+        <div class="timeline-content" onclick="openModal('grading')">
+          <div class="timeline-date">Aug 2024 - Dec 2024</div>
+          <h3>Undergraduate Grading Assistant</h3>
+          <p>VT Department of Engineering</p>
+          <div class="timeline-description">
+            • Providing grading support to over 140 students in ENGE 1215, ensuring fair assessment and constructive feedback.<br>
+            • Collaborating with faculty to maintain a high academic standard and support student success.
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item right" data-aos="fade-left">
+        <div class="timeline-content" onclick="openModal('project-management')">
+          <div class="timeline-date">Aug 2024 - Dec 2024</div>
+          <h3>Project Management Intern</h3>
+          <p>Commonwealth Cyber Initiative (SW VA)</p>
+          <div class="timeline-description">
+            • Contributing to the development of programs, including workforce development, innovation, and research initiatives.<br>
+            • Assisting in event planning for seminars and for an annual meeting involving over 40 researchers presenting their research.<br>
+            • Updated the entire CCI SWVA website Using Ensemble (CMS) including reviewing the website for accuracy, creating content and checking website's accessibility.
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item left" data-aos="fade-right">
+        <div class="timeline-content" onclick="openModal('software-eng')">
           <div class="timeline-date">May 2024 - July 2024</div>
           <h3>Software Engineering Intern</h3>
           <p>Krossmark Innovations (Embee Group, India)</p>
@@ -82,8 +121,8 @@
         </div>
       </div>
 
-      <div class="timeline-item left" data-aos="fade-right">
-        <div class="timeline-content">
+      <div class="timeline-item right" data-aos="fade-left">
+        <div class="timeline-content" onclick="openModal('rd-intern')">
           <div class="timeline-date">May 2024 - Sept 2024</div>
           <h3>R&D Intern</h3>
           <p>MachWorks @ Virginia Tech</p>
@@ -94,33 +133,16 @@
           </div>
         </div>
       </div>
-
-      <div class="timeline-item right" data-aos="fade-left">
-        <div class="timeline-content">
-          <div class="timeline-date">Sept 2024 - Dec 2024</div>
-          <h3>Undergraduate Grading Assistant</h3>
-          <p>VT Department of Engineering</p>
-          <div class="timeline-description">
-            • Providing grading support to over 140 students in ENGE 1215, ensuring fair assessment and constructive feedback.<br>
-            • Collaborating with faculty to maintain a high academic standard and support student success.
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-item left" data-aos="fade-right">
-        <div class="timeline-content">
-          <div class="timeline-date">Sept 2024 - Dec 2024</div>
-          <h3>Project Management Intern</h3>
-          <p>Commonwealth Cyber Initiative SWVA</p>
-          <div class="timeline-description">
-            • Contributing to the development of programs, including workforce development, innovation, and research initiatives.<br>
-            • Assisting in event planning for seminars and for an annual meeting involving over 40 researchers presenting their research.<br>
-            • Updated the entire CCI SWVA website Using Ensemble (CMS) including reviewing the website for accuracy, creating content and checking website's accessibility.
-          </div>
-        </div>
-      </div>
     </div>
   </section>
+
+  <!-- Modal -->
+  <div id="experienceModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="modalContent"></div>
+    </div>
+  </div>
 
   <!-- 2. Badges and Icons (Skills Section) -->
   <section id="skills" data-aos="fade-up">
@@ -176,6 +198,10 @@
           <span class="tech-label">MySQL</span>
         </div>
         <div class="tech-icon-wrapper">
+          <img src="https://raw.githubusercontent.com/supabase/supabase/master/packages/common/assets/images/supabase-logo-icon.svg" alt="Supabase" class="tech-icon" />
+          <span class="tech-label">Supabase</span>
+        </div>
+        <div class="tech-icon-wrapper">
           <img src="https://www.vectorlogo.zone/logos/twilio/twilio-icon.svg" alt="Twilio" class="tech-icon" />
           <span class="tech-label">Twilio</span>
         </div>
@@ -187,6 +213,7 @@
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="tech-icon" />
           <span class="tech-label">Docker</span>
         </div>
+
         <div class="tech-icon-wrapper">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" class="tech-icon" />
           <span class="tech-label">VS Code</span>

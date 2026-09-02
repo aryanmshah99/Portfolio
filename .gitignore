@@ -1,1 +1,9 @@
 node_modules/
+
+# Private working notes — never publish.
+# Contains client names, unverified metrics, and candid self-assessment
+# that are deliberately not on the public site.
+aryan_shah_portfolio_data.md
+
+# Duplicate of assets/docs/Aryan-Shah-Resume.pdf (the copy the site links to)
+/aryan_shah_resume.pdf
